@@ -1,0 +1,65 @@
+.downloadContainer {
+  background-color: #ecfefe;
+  padding-inline: 20px;
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  border-radius: 50px;
+}
+
+.downloadContainer > .app {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.textContainer {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.textContainer > h1 {
+  color: var(--primary);
+}
+
+.textContainer > p {
+  color: var(--deep-black);
+  font-family: var(--font-secondary);
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.textContainer > span {
+  color: var(--black);
+}
+
+@media (max-width: 800px) {
+  .downloadContainer {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .downloadContainer > .app {
+    height: 150px;
+  }
+  .downloadContainer > .app > img {
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .textContainer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .textContainer > p {
+    font-size: 20x;
+  }
+}

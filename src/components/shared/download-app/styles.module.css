@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.button {
+  background-color: var(--deep-black);
+  padding-inline: 8px;
+  padding-block: 4px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  height: 48px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 144px;
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.buttonTitle {
+  font-family: var(--font-secondary);
+  font-size: 10px;
+  font-weight: 400;
+  color: var(--white);
+  text-align: left;
+}
+
+.buttonText {
+  font-family: var(--font-secondary);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--white);
+  text-align: left;
+
+}
+

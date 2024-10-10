@@ -1,0 +1,36 @@
+:root {
+  --primary: #07969E;
+  --secondary: #40BBC3;
+  --black: #4a5050;
+  --deep-black: #2D2D2D;
+  --white: #ffffff;
+  --font-primary: 'DM Sans', sans-serif;
+  --font-secondary: "Hanken Grotesk", sans-serif;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 16px;
+  overflow-x: hidden;
+  color: var(--black);
+}
+
+/* Reset padding and margin */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  max-width: 1400px;
+  margin-inline: auto;
+  padding-inline: 20px;
+}
+
+.section{
+  padding-block: 50px;
+}
