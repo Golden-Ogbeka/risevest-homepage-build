@@ -1,19 +1,8 @@
 import React from 'react';
-import { ReactComponent as AppleIcon } from '../../../assets/icons/apple.svg';
-import { ReactComponent as PlaystoreIcon } from '../../../assets/icons/playstore.svg';
+import { downloadPoints } from './data';
 import styles from './styles.module.css';
 
 const DownloadApp = () => {
-  const downloadPoints = [
-    {
-      icon: <AppleIcon />,
-      label: 'App Store',
-    },
-    {
-      icon: <PlaystoreIcon />,
-      label: 'Google Play',
-    },
-  ];
   return (
     <div className={styles.container}>
       {downloadPoints.map((item) => (

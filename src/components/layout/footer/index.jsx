@@ -1,33 +1,9 @@
 import React from 'react';
-import BrandLogo from '../../../assets/brand/logo-alt.svg';
 import { ReactComponent as ExternalIcon } from '../../../assets/icons/arrow-link.svg';
 import styles from '../styles.module.css';
-import {
-  contactFooterLinks,
-  exploreFooterLinks,
-  mainFooterLinks,
-  productsFooterLinks,
-} from './footer-links';
+import { sections } from './data';
 
 const Footer = () => {
-  const sections = [
-    {
-      title: <img src={BrandLogo} alt='Rise Vest Logo' />,
-      links: mainFooterLinks,
-    },
-    {
-      title: <h2>Explore</h2>,
-      links: exploreFooterLinks,
-    },
-    {
-      title: <h2>Products</h2>,
-      links: productsFooterLinks,
-    },
-    {
-      title: <h2>Contact Us</h2>,
-      links: contactFooterLinks,
-    },
-  ];
   return (
     <footer className={styles.footerContainer + ' container'}>
       <nav className={styles.footerLinks}>

@@ -1,3 +1,5 @@
+import BrandLogo from '../../../assets/brand/logo-alt.svg';
+
 export const mainFooterLinks = [
   { label: 'About Us', destination: '#' },
   { label: 'Careers', destination: '#' },
@@ -24,4 +26,23 @@ export const contactFooterLinks = [
   { label: 'Newsletter', destination: '#', external: true },
   { label: 'Instagram', destination: '#', external: true },
   { label: 'Twitter', destination: '#', external: true },
+];
+
+export const sections = [
+  {
+    title: <img src={BrandLogo} alt='Rise Vest Logo' />,
+    links: mainFooterLinks,
+  },
+  {
+    title: <h2>Explore</h2>,
+    links: exploreFooterLinks,
+  },
+  {
+    title: <h2>Products</h2>,
+    links: productsFooterLinks,
+  },
+  {
+    title: <h2>Contact Us</h2>,
+    links: contactFooterLinks,
+  },
 ];

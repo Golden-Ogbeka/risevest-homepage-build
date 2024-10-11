@@ -79,6 +79,7 @@
 
 .regulationSection {
   background-image: url(../../assets/backgrounds/regulation.png);
+  background-size: cover;
 }
 
 .regulationContent {
@@ -98,6 +99,109 @@
 
 .regulationContent > p {
   max-width: 504px;
+}
+
+.futureSectionContent {
+  display: flex;
+  align-items: center;
+  gap: 200px;
+  /* justify-content: space-between; */
+}
+
+.futureTextContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+}
+
+.futureTextContainer > h1 {
+  font-weight: 500;
+  font-family: var(--font-secondary);
+  color: var(--deep-black);
+  font-size: 18px;
+}
+
+.futureTextContainer > h2 {
+  font-weight: 600;
+  font-family: var(--font-secondary);
+  color: var(--deep-black);
+  font-size: 48px;
+}
+
+.futureTextContainer > h2 > span {
+  color: #8c5ff8;
+}
+
+.futureTextContainer > p {
+  max-width: 391px;
+  color: var(--deep-black);
+  margin-bottom: 10px;
+}
+
+.futureTextContainer > button {
+  outline: none;
+  border: none;
+  background-color: #07969e;
+  width: 160px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: var(--font-secondary);
+  font-weight: 700;
+  color: var(--white);
+}
+
+.futureSectionImage {
+  background-image: url(../../assets/images/risevest-save.png);
+  background-size: contain;
+  height: 508.71px;
+  width: 316.31px;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.futureSectionImage > .futureImageContainer {
+  width: 316.31px;
+  background-image: url(../../assets/images/rise-build-wealth.png);
+  height: 269.2px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-left: -25px;
+}
+
+.futureSectionImage > .futureImageContainer > .futureImageTextContainer {
+  padding: 40px;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.futureImageTextContainer > .buildText {
+  font-family: var(--font-secondary);
+  font-size: 16.05px;
+  font-weight: 700;
+}
+
+.futureImageTextContainer > .buildDescription {
+  font-weight: 400;
+  font-size: 12.62px;
+}
+
+.futureImageTextContainer > a {
+  font-weight: 700;
+  font-size: 12.04px;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 @media (max-width: 800px) {
@@ -146,5 +250,9 @@
 
   .regulationContent > p {
     font-size: 13px;
+  }
+
+  .futureSection {
+    display: none;
   }
 }
