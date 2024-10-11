@@ -8,7 +8,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 60px;
 }
 
@@ -16,12 +16,11 @@
   flex-direction: row-reverse;
 }
 
-
 .hideOnMobile {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 60px;
 }
 
@@ -50,7 +49,9 @@
 .stepDescriptionMobile {
   display: none;
 }
-
+.stepText {
+  max-width: 50%;
+}
 .stepText > a {
   font-family: var(--font-secondary);
   font-weight: 500;
@@ -117,6 +118,10 @@
     display: none;
   }
 
+  .stepText {
+    max-width: 100%;
+  }
+
   .imageContainerBar {
     position: absolute;
     bottom: 0;
@@ -127,7 +132,7 @@
     display: block;
   }
 
-  .hideOnMobile{
+  .hideOnMobile {
     display: none;
   }
 }

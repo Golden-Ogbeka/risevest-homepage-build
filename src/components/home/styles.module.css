@@ -106,7 +106,8 @@
   display: flex;
   align-items: center;
   gap: clamp(100px, 20vw, 200px);
-  /* justify-content: space-between; */
+  justify-content: center;
+  width: 100%;
 }
 
 .futureTextContainer {
@@ -114,6 +115,7 @@
   flex-direction: column;
   gap: 10px;
   text-align: left;
+  max-width: 50%;
 }
 
 .futureTextContainer > h1 {
@@ -135,7 +137,7 @@
 }
 
 .futureTextContainer > p {
-  max-width: 391px;
+  max-width: 50%;
   color: var(--deep-black);
   margin-bottom: 10px;
 }
