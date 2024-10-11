@@ -1,6 +1,6 @@
 # RiseVest Homepage UI Build
 
-Clone of RiseVest Homepage UI
+Implementation of RiseVest Homepage UI
 
 ## Getting Started
 
