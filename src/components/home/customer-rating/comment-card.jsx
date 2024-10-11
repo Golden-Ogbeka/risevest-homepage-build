@@ -3,7 +3,7 @@ import styles from './styles.module.css';
 
 const CommentCard = ({ rating }) => {
   return (
-    <div className={styles.commentCard}>
+    <article className={styles.commentCard}>
       <div className={styles.cardContent}>
         <div className={styles.cardComment}>{rating.comment}</div>
         <div className={styles.commentOwner}>
@@ -12,7 +12,7 @@ const CommentCard = ({ rating }) => {
           <span>{rating.job}</span>
         </div>
       </div>
-    </div>
+    </article>
   );
 };
 

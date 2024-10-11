@@ -1,0 +1,133 @@
+.investmentContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.investmentStepContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+
+.investmentStepContainer:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+
+.hideOnMobile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+
+.hideOnMobile:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.stepHeader {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 28.8px;
+  font-family: var(--font-secondary);
+  margin-bottom: 10px;
+  color: var(--deep-black);
+}
+
+.stepDescription {
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.stepHeaderMobile {
+  display: none;
+}
+
+.stepDescriptionMobile {
+  display: none;
+}
+
+.stepText > a {
+  font-family: var(--font-secondary);
+  font-weight: 500;
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.imageContainerBar {
+  display: none;
+}
+
+.imageContainer {
+  position: relative;
+}
+
+@media (max-width: 800px) {
+  .investmentStepContainer {
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+
+  .stepImage {
+    width: 280px;
+    object-fit: contain;
+  }
+
+  .investmentStepContainer:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+
+  .stepHeader {
+    display: none;
+  }
+
+  .stepDescription {
+    display: none;
+  }
+
+  .stepHeaderMobile {
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 18px;
+    font-family: var(--font-secondary);
+    margin-bottom: 10px;
+    color: var(--deep-black);
+  }
+
+  .stepDescriptionMobile {
+    display: block;
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+
+  .investmentStepContainer {
+    text-align: center;
+  }
+  .stepText > a {
+    display: none;
+  }
+
+  .imageContainerBar {
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    right: 5px;
+    height: 22.75px;
+    background-color: #a0dde2cc;
+    display: block;
+  }
+
+  .hideOnMobile{
+    display: none;
+  }
+}

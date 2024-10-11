@@ -80,6 +80,7 @@
 .regulationSection {
   background-image: url(../../assets/backgrounds/regulation.png);
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .regulationContent {
@@ -170,6 +171,7 @@
   background-image: url(../../assets/images/rise-build-wealth.png);
   height: 269.2px;
   background-size: contain;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -202,6 +204,47 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.heroSection {
+  background-image: url(../../assets/backgrounds/hero.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  align-items: center;
+}
+
+.heroContent {
+  max-width: 456px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: flex-start;
+}
+
+.heroContent > h1 {
+  font-size: 56px;
+  font-weight: 600;
+  font-family: var(--font-secondary);
+  color: var(--primary);
+  line-height: 60px;
+  margin-bottom: 20px;
+}
+
+.heroContent > p {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.partnerContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.partnerContainer > p {
+  display: none;
 }
 
 @media (max-width: 800px) {
@@ -254,5 +297,41 @@
 
   .futureSection {
     display: none;
+  }
+
+  .heroSection {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .heroContent {
+    align-items: center;
+    text-align: center;
+  }
+
+  .heroContent > h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  .heroContent > p {
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+
+  .partnerContainer {
+    flex-direction: column;
+  }
+
+  .partnerContainer > img {
+    object-fit: contain;
+  }
+
+  .partnerContainer > p {
+    display: block;
+    text-align: left;
+    color: #7b8da8;
+    font-size: 18px;
+    font-weight: 700;
   }
 }
