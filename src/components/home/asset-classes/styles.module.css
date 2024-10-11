@@ -1,0 +1,137 @@
+.assetSectionHeader {
+  font-family: var(--font-secondary);
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--deep-black);
+  text-align: center;
+}
+
+.assetSectionDescription {
+  font-weight: 400;
+  color: var(--deep-black);
+  text-align: center;
+}
+
+.assetList {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.assetList > li {
+  width: 100%;
+  border: 2px solid #919fb533;
+  border-radius: 5px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  min-height: 515px;
+  display: flex;
+  flex-direction: column;
+}
+
+.assetHeader {
+  height: 126px;
+  width: 100%;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.assetContent {
+  position: relative;
+  padding-top: 60px;
+  background-color: var(--white);
+  padding-inline: 5px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.assetIcon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  right: 0;
+  top: -57.5px;
+}
+
+.assetIconBubble {
+  width: 115px;
+  height: 115px;
+  background-color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.assetTitle {
+  font-family: var(--font-secondary);
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.assetDescription {
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.assetInfo {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+  text-align: center;
+  font-weight: 400;
+  display: flex;
+  gap: 2px;
+  justify-content: center;
+  align-items: center;
+}
+
+.assetInfoTitle {
+  color: #919fb5;
+}
+
+.assetInfoContainer {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 5px;
+  text-align: center;
+  align-items: center;
+}
+
+.assetButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: var(--font-secondary);
+  font-weight: 600;
+  color: var(--primary);
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .assetSectionHeader {
+    font-size: 32px;
+  }
+  .assetSectionDescription {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .assetList {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 40px;
+  }
+}

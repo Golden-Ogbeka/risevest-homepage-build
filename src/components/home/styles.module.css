@@ -104,7 +104,7 @@
 .futureSectionContent {
   display: flex;
   align-items: center;
-  gap: 200px;
+  gap: clamp(100px, 20vw, 200px);
   /* justify-content: space-between; */
 }
 
@@ -169,11 +169,11 @@
   width: 316.31px;
   background-image: url(../../assets/images/rise-build-wealth.png);
   height: 269.2px;
-  background-size: cover;
+  background-size: contain;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  margin-left: -25px;
+  margin-left: -20px;
 }
 
 .futureSectionImage > .futureImageContainer > .futureImageTextContainer {

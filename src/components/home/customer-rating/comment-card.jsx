@@ -8,8 +8,8 @@ const CommentCard = ({ rating }) => {
         <div className={styles.cardComment}>{rating.comment}</div>
         <div className={styles.commentOwner}>
           <img src={rating.image} alt={`${rating.customerName}'s comment`} />
-          <span>{rating.customerName}</span>
-          <p>{rating.job}</p>
+          <p>{rating.customerName}</p>
+          <span>{rating.job}</span>
         </div>
       </div>
     </div>
